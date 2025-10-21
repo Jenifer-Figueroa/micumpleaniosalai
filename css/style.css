@@ -1,0 +1,88 @@
+/* style.css */
+
+body {
+    margin: 0;
+    overflow: hidden; /* Evita barras de desplazamiento */
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0; /* Color de fondo general */
+}
+
+.invitation-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden; /* Recorta el contenido que se desborda */
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/image/bosque.jpg); /* Reemplaza con la ruta de tu imagen de bosque */
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+}
+
+
+.envelope {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    overflow: hidden; /* Recorta el contenido que se desborda del sobre */
+}
+
+.envelope-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-color: #e0e0e0;
+    clip-path: polygon(0 0, 50% 100%, 100% 0); /* Forma triangular para la solapa */
+}
+
+.envelope-body {
+    padding: 20px;
+    text-align: center;
+}
+
+.envelope h1 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.envelope p {
+    margin: 5px 0;
+}
+
+.fairy {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 80px;
+    z-index: 2;
+    animation: fairyFly 5s linear infinite; /* Animación del hada */
+}
+
+
+@keyframes fairyFly {
+    0% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(50px, 20px); /* Se mueve un poco */
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}

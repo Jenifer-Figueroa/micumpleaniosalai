@@ -1,0 +1,83 @@
+/* style.css */
+
+/* Para centrar todo el contenedor en la pantalla */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* centra horizontalmente */
+    align-items: center;     /* centra verticalmente */
+    background-color: #f5f5f5; /* puedes cambiar el color de fondo */
+    padding: 0;
+
+
+}
+
+/* Opcional: si quieres que la imagen no sea muy grande */
+.hada img {
+    /*max-width: 80%; /* ajusta el tamaño máximo */
+    /*height: auto;*/
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* para que el texto quede centrado */
+    max-width: 100%;  
+}
+.fondo {
+    /* Pon la ruta correcta a tu imagen */
+    background-image: url('image/Bosque.png');
+    background-size: cover;       /* cubre toda la pantalla */
+    background-position: center;  /* centra la imagen */
+    background-repeat: no-repeat; /* evita que se repita */
+    width: 100%;
+    height: 100%;
+    position: absolute;           /* asegura que cubra todo */
+    top: 0;
+    left: 0;
+    z-index: -1;                  /* pone el fondo detrás del contenido */
+}
+.papel{
+    background-image: url('image/papel.jpg');
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+              /* asegura que cubra todo */
+    top: 0;
+    left: 0;
+    z-index: -1;  
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.circulo {
+ /* Habilita el posicionamiento preciso */
+  position: absolute; 
+
+  /* Mueve el punto de partida al 50% horizontal del contenedor padre */
+  left: 50%; 
+
+  /* **AJUSTA ESTE VALOR:** Sigue siendo el punto más crítico.
+     Incrementa o disminuye este porcentaje hasta que quede en el centro vertical del círculo morado.
+     Un valor como 15% - 20% podría ser un buen punto de partida. */
+  top: 18%; /* Empezamos con un valor un poco más alto, ajústalo según necesites. */
+
+  /* Truco para el centrado: Mueve el elemento hacia atrás (arriba e izquierda) 
+     la mitad de su propio ancho/alto, asegurando el centrado perfecto */
+  transform: translate(-50%, -50%); 
+  height: 800px;
+  width: 400px;
+margin-top: 20%;
+
+}
+.circulo img {
+    /* Estilos para el contenedor de la niña */
+    
+    /* Centrar en la parte superior */
+    width: 100%; 
+    height: 100%;
+    
+}
