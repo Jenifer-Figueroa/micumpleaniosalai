@@ -40,16 +40,35 @@ html, body {
 .papel{
     background-image: url('image/papel.jpg');
     background-size: cover;
+    background-attachment: fixed;
     width: 100%;
     min-height: 100vh;
               /* asegura que cubra todo */
     top: 0;
     left: 0;
     z-index: -1;  
+    
 }
 .container{
     display: flex;
     flex-direction: column;
+}
+
+.contador{
+    background-image: url('image/marco.png');
+   background-size: cover;
+}
+
+/* En tu style.css, después de tus otras reglas */
+
+/* En tu style.css */
+
+iframe{
+   margin-left: 0%;
+   margin-top: 0%;
+    width: 300px;
+    height: 100px;
+ 
 }
 
 
@@ -80,4 +99,49 @@ margin-top: 20%;
     width: 100%; 
     height: 100%;
     
+}
+
+.banner{
+    position: absolute;
+      transform: translate(-50%, -50%); 
+  height: 800px;
+  width: 400px;
+  left: 50%; 
+  top: 65%;
+
+}
+
+.banner img{
+    width: 100%; 
+    height: 100%;
+    
+}
+/* En tu style.css */
+
+.contador-personalizado {
+    /* 1. Fondo Transparente */
+    background-color: transparent; /* ¡La clave es esta! */
+    
+    /* 2. Centrado y Espaciado */
+    width: 90%; /* Ancho que ocupa */
+    max-width: 400px; /* Tamaño máximo para centrarlo */
+    margin: 50px auto 20px auto; /* Centrado horizontal y margen superior/inferior */
+    text-align: center; /* Centra el texto dentro del div */
+    
+    /* 3. Estilo del Texto */
+    color: #4CAF50; /* Color principal (por ejemplo, verde) */
+    font-family: Arial, sans-serif;
+}
+
+.contador-personalizado div {
+    display: inline-block;
+    padding: 10px;
+    font-size: 30px; /* Tamaño de los números */
+}
+
+.contador-personalizado .etiqueta {
+    display: block;
+    font-size: 14px; /* Tamaño de las etiquetas (días, horas, etc.) */
+    color: #333;
+    margin-top: 5px;
 }
