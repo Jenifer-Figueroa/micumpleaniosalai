@@ -17,3 +17,8 @@ function moveFairyRandomly() {
 // Mueve el hada cada cierto tiempo (por ejemplo, cada 3 segundos)
 setInterval(moveFairyRandomly, 3000);
 
+document.getElementById("botonMusica").addEventListener("click", () => {
+    document.getElementById("musicaFondo").play();
+    // si querés, redirigí a otra página:
+    // window.location.href = "invitacion.html";
+  });
