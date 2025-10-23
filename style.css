@@ -54,6 +54,8 @@ html, body {
 .container{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
 }
 
 
@@ -94,7 +96,7 @@ margin-top: 20%;
   height: 800px;
   width: 400px;
   left: 50%; 
-  top: 65%;
+  top: 52%;
 
 }
 
@@ -109,8 +111,9 @@ margin-top: 20%;
 
 .contador{
     background-image: url('image/marco.png');
+    position: absolute;
    background-size: cover;
-
+top: 75%;
 }
 
 
