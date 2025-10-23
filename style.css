@@ -110,10 +110,15 @@ margin-top: 20%;
 
 
 .contador{
-    background-image: url('image/marco.png');
+    
     position: absolute;
-   background-size: cover;
-top: 75%;
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: center;
+top: 100%;
+width: 300px;
+height: 200px;
+
 }
 
 
@@ -123,5 +128,19 @@ iframe{
    margin-top: 0%;
     width: 300px;
     height: 100px;
+    
  
+}
+
+p{
+    text-align: center;
+    font-family: 'Comic Sans MS';
+
+}
+
+.frase{
+    position: absolute;
+    background-size: contain;
+    background-position: center;
+    top: 90%;
 }
