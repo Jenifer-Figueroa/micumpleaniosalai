@@ -171,7 +171,7 @@ p{
     position: absolute;
     background-size: contain;
     background-position: center;
-    top: 85%;
+    top: 80%;
 }
 
 .fecha{
@@ -242,4 +242,37 @@ position: absolute;
 /* Efecto al pasar el ratón (hover) */
 .boton-ubicacion:hover {
     background-color: #A62953; /* Un rosa un poco más oscuro al tocar */
+}
+
+
+
+
+/* Envuelve el código del carrusel con un div con esta clase para aplicar los estilos */
+.carrusel-contenedor {
+    position: absolute;
+    z-index: 10;
+    /* Centrarlo horizontalmente */
+    margin: 30px auto; 
+    padding: 15px;
+    
+    /* Limitar el ancho máximo para evitar que sea muy grande en PC */
+    max-width: 400px; /* Puedes ajustar este valor */
+    
+    /* Asegurar que en móviles use casi todo el ancho disponible */
+    width: 90%; 
+
+    top: 170%;
+    
+    
+    /* Opcional: Para darle un toque más pulido */
+    border-radius: 10px;
+    overflow: hidden; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); 
+}
+
+/* Opcional: Para asegurar que todas las fotos tengan una altura uniforme */
+.carousel-inner .carousel-item img {
+    /* Establece una altura fija y corta las imágenes si es necesario (sin deformarlas) */
+    height: 300px; /* Ajusta la altura que prefieras */
+    object-fit: cover; 
 }
