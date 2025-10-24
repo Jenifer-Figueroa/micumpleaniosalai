@@ -212,7 +212,7 @@ position: absolute;
     position: absolute;
     top: 158%; /* Espacio entre el mapa y el botón */
     margin-bottom: 30px;
-    
+    margin-top: 25px;
 }
 
 /* Estilos del botón */
