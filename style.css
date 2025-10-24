@@ -134,7 +134,12 @@ iframe{
 
 p{
     text-align: center;
-    font-family: 'Comic Sans MS';
+    font-family: 'Quicksand';
+    width: 350px;
+    font-size: 19px;
+    font-style: italic;
+    text-shadow: 2px 2px 10px #000000;
+    color: #123119;
 
 }
 
@@ -142,5 +147,22 @@ p{
     position: absolute;
     background-size: contain;
     background-position: center;
+    top: 85%;
+}
+
+.fecha{
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    background-size: contain;
+    background-position: center;
     top: 90%;
+    margin-left: 0%;
+    right: 27%;
+}
+
+.fecha img{
+    width: 400px;
+    height: 480px;
+
 }
