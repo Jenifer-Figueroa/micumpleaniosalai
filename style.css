@@ -210,7 +210,7 @@ position: absolute;
 .boton-ubicacion-contenedor {
     text-align: center;
     position: absolute;
-    top: 158%; /* Espacio entre el mapa y el botón */
+    top: 160%; /* Espacio entre el mapa y el botón */
     margin-bottom: 30px;
     margin-top: 25px;
 }
