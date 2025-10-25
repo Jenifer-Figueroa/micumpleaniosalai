@@ -416,9 +416,9 @@ position: absolute;
 }
 
 .intro{
-    top: 80%;
+    top: 85%;
     position: absolute;
-    right: 20%;
+    right: 25%;
 }
 @font-face {
     font-family: 'GreatVibesWeb'; /* Le das un nombre fácil para usar en CSS */
