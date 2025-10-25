@@ -201,7 +201,7 @@ position: absolute;
     width: 300px;
     height: 300px;
     top: 145%;
-    right: 22%;
+    right: 20%;
 }
 .ubicacion img{
     width: 350px;
@@ -215,7 +215,7 @@ position: absolute;
     top: 195%; /* Espacio entre el mapa y el botón */
     margin-bottom: 30px;
     margin-top: 25px;
-    right: 22%;
+    right: 20%;
 }
 
 /* Estilos del botón */
