@@ -215,7 +215,7 @@ position: absolute;
     top: 195%; /* Espacio entre el mapa y el botón */
     margin-bottom: 30px;
     margin-top: 25px;
-    right: 20%;
+    right: 19%;
 }
 
 /* Estilos del botón */
@@ -359,7 +359,7 @@ position: absolute;
     display: inline-block;
     padding: 10px 25px; /* Relleno interior para hacerlo grande */
     top: 215%;
-    right: 24%;
+    right: 22%;
     
     /* El color rosado que tienes en la imagen */
     background-color: #E68ACD; /* Un rosa similar al de la imagen */
@@ -398,7 +398,7 @@ position: absolute;
     margin-bottom: 5px; /* Espacio justo antes del botón */
     z-index: 100; /* Aún es buena idea mantener un z-index alto */
     top: 208%;
-    right: 24%;
+    right: 25%;
 }
 
 .alias{
